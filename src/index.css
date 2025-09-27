@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+  backdrop-filter: blur(6px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  top: auto !important;
+  bottom: 10px !important; 
+  z-index: 11;
+}
+
+.swiper-button-prev {
+  left: 45%; 
+}
+
+.swiper-button-next {
+  right: 45%; 
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+  text-align: center;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+  font-weight: bold;
+  
+}
